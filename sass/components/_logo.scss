@@ -1,0 +1,19 @@
+// общие стили логотипа
+.logo {
+    display: inline-block;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--focus-color);
+    text-decoration: none;
+}
+
+.logo__text {
+    color: var(--studio-text-color);
+
+    &--light {
+        color: var(--third-color);
+    }
+}

@@ -1,0 +1,38 @@
+.activities {
+    padding-top: 0;
+}
+
+.activities-list {
+    display: flex;
+}
+
+.activities-list__item {
+    flex-basis: calc((100% - 60px) / 3);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.activities-list__wrapper {
+    position: relative;
+}
+
+.activities-list__image {
+    display: block;
+    max-width: 100%;
+}
+
+.activities-list__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 27px 0;
+    background-color: var(--activities-li-title-bcg);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.172;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-color);
+}

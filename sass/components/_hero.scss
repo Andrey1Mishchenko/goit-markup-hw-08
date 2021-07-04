@@ -1,0 +1,30 @@
+.hero {
+    background-color: var(--hero-bcg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to top, var(--hero-bcg-gradient), var(--hero-bcg-gradient)),
+        url(../images/hero-bcg-pic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1600px 600px;
+}
+
+.hero__title {
+    color: var(--third-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+
+    width: 696px;
+    margin: 0 auto 30px;
+}
+
+.hero__button {
+    @extend %button;
+    display: block;
+    padding: 10px 32px;
+    margin: 0 auto;
+}
