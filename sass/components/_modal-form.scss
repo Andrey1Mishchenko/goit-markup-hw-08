@@ -62,10 +62,15 @@
     }
 
     &::placeholder {
-        font-size: 12px;
-        line-height: 1.167;
+        font-size: 14px;
+        line-height: 1.143;
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
+
+        @media screen and (min-width: 1200px) {
+            font-size: 12px;
+            line-height: 1.167;
+        }
     }
 }
 
@@ -82,8 +87,8 @@
 
 .modal-form__custom-check {
     display: inline-block;
-    width: 16px;
-    height: 15px;
+    min-width: 16px;
+    min-height: 15px;
     background-image: url(../images/icons/uncheck.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -108,12 +113,21 @@
 
 .modal-form__policy-title {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    font-size: 14px;
-    line-height: 1.714;
+    font-size: 12px;
+    line-height: 1.167;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+
+    @media screen and (max-width: 479.98px) {
+        display: block;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.714;
+    }
 }
 
 .modal-form__policy {
