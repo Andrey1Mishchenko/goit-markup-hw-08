@@ -1370,7 +1370,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1382,6 +1382,7 @@ h3 {
 
 @media screen and (max-width: 479px), (min-width: 768px) {
   .filter-button-list {
+    margin-bottom: 30px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1498,10 +1499,10 @@ h3 {
   line-height: 1.556;
   letter-spacing: 0.03em;
   color: var(--third-color);
-  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
-  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform, 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 480px) {

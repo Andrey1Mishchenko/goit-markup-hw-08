@@ -1,12 +1,13 @@
 .filter-button-list {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     @media screen and (max-width: 767px) {
         flex-wrap: wrap;
     }
 
     @media screen and (max-width: 479px), (min-width: 768px) {
+        margin-bottom: 30px;
         justify-content: center;
     }
 
